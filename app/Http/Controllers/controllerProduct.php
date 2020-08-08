@@ -27,11 +27,11 @@ class controllerProduct extends Controller
     public function create( Request $request)
     {
 
-        $nhanvien_add= new products;
-        $nhanvien_add->name=$request->name;
-        $nhanvien_add->price=$request->price;
-        $nhanvien_add->description=$request->description;
-        $nhanvien_add->save();
+        $product_add= new products;
+        $product_add->name=$request->name;
+        $product_add->price=$request->price;
+        $product_add->description=$request->description;
+        $product_add->save();
         ;
         return redirect()->route('Display');
     }
